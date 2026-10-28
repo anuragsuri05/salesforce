@@ -1,0 +1,28 @@
+/* Home, list views, record pages, search. */
+.home-hero .avatar { width: 44px; height: 44px; font-size: 16px; }
+.home-stats .stat-value { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.home-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 1000px) { .home-grid { grid-template-columns: 1fr; } }
+.bar-row { display: grid; grid-template-columns: 150px 1fr 120px; gap: 12px; align-items: center; padding: 6px 0; }
+.bar-label { font-size: 13px; color: var(--text-2); }
+.bar-track { height: 12px; background: var(--surface-3); border-radius: 6px; overflow: hidden; }
+.bar-fill { height: 100%; background: var(--brand); border-radius: 6px; transition: width .4s ease; }
+.bar-value { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.task-row { display: flex; align-items: center; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--border); }
+.task-row:last-child { border-bottom: 0; }
+.task-row.done a { text-decoration: line-through; color: var(--muted); }
+.event-date { width: 40px; text-align: center; border: 1px solid var(--border); border-radius: 8px; padding: 2px 0; background: var(--surface-2); line-height: 1.2; }
+.quick-link { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; color: var(--text); font-weight: 550; text-decoration: none !important; }
+.quick-link:hover { border-color: var(--brand); color: var(--brand); }
+
+.list-card { overflow: hidden; }
+.list-main { flex: 1; min-width: 0; }
+.dual-list { display: flex; gap: 12px; align-items: stretch; }
+.dual-list select { font-size: 13px; }
+.mention { color: var(--brand); font-weight: 600; background: var(--brand-50); border-radius: 4px; padding: 0 3px; }
+.related-card { box-shadow: none; }
+.related-card .card-header { min-height: 44px; padding: 8px 12px; }
+.related-card .card-header h3 { font-size: 14px; }
+.convert-section { border: 1px solid var(--border); border-radius: var(--radius); padding: 14px 16px; background: var(--surface-2); }
+.record-layout .tabs { padding: 0 12px; }
+.view-picker svg.icon { width: 18px; height: 18px; }
